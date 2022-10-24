@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Products Page</title>
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="products">
+        <% for(let i=0; i < products.length; i++) {%>
+            <%- include('product.ejs', {product: products[i]}) %>
+                <% } %>
+    </div>
+</body>
+
+</html>

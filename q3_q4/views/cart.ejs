@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="css/cart.css" rel="stylesheet">
+        <title>Cart</title>
+    </head>
+    <body>
+        <ul>
+        <% for(let key in items) {%>
+            <li>
+                <div>Product: <%= key %></div>
+                <div>Quantity: <%= items[key].quantity %></div>
+                <div>Total price: $<%= items[key].price * items[key].quantity %></div>
+            </li>
+        <% } %>
+        </ul>
+
+        <div>
+            Grand Total: $<%= total %>
+        </div>
+
+        <a href="/">Go to shopping</a>
+
+    </body>
+</html>

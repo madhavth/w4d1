@@ -1,0 +1,10 @@
+<form method="post" action="/addToCart">
+<div class="product">
+    <div><%= product.name %></div>
+    <div>$<%= product.price %></div>
+    <input type="hidden" name="name" value="<%= product.name %>">
+    <input type="hidden" name="price"  value="<%= product.price %>">
+
+    <button class="addToCart" name="<%= product.name %>">Add to cart</button>
+</div>
+</form>

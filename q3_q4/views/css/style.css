@@ -1,0 +1,18 @@
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.product {
+    width: 300px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.addToCart {
+    margin-top: 20px;
+}
